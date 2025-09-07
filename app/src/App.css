@@ -1,0 +1,156 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:  'Segoe UI', sans-serif;
+  background-color: #eeeeee;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin-bottom: 1.3rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+main {
+  width: 100%;
+  min-width: 450px; 
+  margin: 2rem auto;
+  padding: 1.3rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(24, 24, 24, 0.05);
+}
+
+nav {
+  display: flex;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+nav button {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #555;
+  font-weight: 600;
+  transition: border-color 0.2s, color 0.2s;
+  border-radius: 0;
+}
+
+nav button:hover {
+  color: #007bff;
+  background-color: #fff;
+  border-bottom-color: #a0c4ff;
+}
+
+nav button.active {
+  color: #007bff;
+  border-bottom-color: #007bff;
+  cursor: default;
+  font-weight: 700;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  width: 100%;
+}
+
+label {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+input, select {
+  font-size: 1rem;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+#companyList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#companyList li {
+  margin: 1.2rem 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.8rem;
+}
+
+.companyListItem, .userListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userRemoveBtn {
+  background-color: red;
+  font-size: .7rem;
+}
+.userRemoveBtn:hover {
+  background-color: rgb(222, 0, 0);
+}
+
+.companyListItem {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.toggleEmployees {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  padding: 0;
+  
+}
+
+.toggleEmployees:hover {
+  color: #0056b3;
+  background: none;
+  text-decoration: underline;
+}
